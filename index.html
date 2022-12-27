@@ -17,13 +17,15 @@
 
     <main class="container">
       <section id="section-formulario" class="mt-5">
-        <form id="form-clientes">
+        <form id="form-clientes" action="./contactos.html">
           <label for="nombre" class="form-label">Nombre:</label>
           <input type="text" name="nombre" id="nombre" class="form-control" required/>
           <label for="apellido" class="form-label">Apellido:</label>
           <input type="text" name="apellido" id="apellido" class="form-control" required/>
           <label for="rut" class="form-label">Rut:</label>
           <input type="text" name="rut" id="rut" class="form-control" required/>
+          <label for="edad" class="form-label">Edad:</label>
+          <input type="number" name="edad" id="edad" class="form-control" value="0" required min="0" max="130"/>
           <button type="submit" class="btn btn-primary my-3">Cargar datos</button>
         </form>
       </section>
@@ -35,10 +37,12 @@
               <th scope="col">#</th>
               <th scope="col">Nombre</th>
               <th scope="col">Apellido</th>
-              <th scope="col">rut</th>
+              <th scope="col">RUN</th>
+              <th scope="col">Edad</th>
             </tr>
           </thead>
           <tbody id="cuerpo-tabla">
+            
           </tbody>
         </table>
       </section>
