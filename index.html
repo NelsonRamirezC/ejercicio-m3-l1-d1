@@ -4,9 +4,51 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
     <title>Ejercicio M3 - L1 - D1</title>
   </head>
   <body>
+    <h1 class="text-center">Completando tabla utilizando formulario.</h1>
+
+    <main class="container">
+      <section id="section-formulario" class="mt-5">
+        <form id="form-clientes">
+          <label for="nombre" class="form-label">Nombre:</label>
+          <input type="text" name="nombre" id="nombre" class="form-control" required/>
+          <label for="apellido" class="form-label">Apellido:</label>
+          <input type="text" name="apellido" id="apellido" class="form-control" required/>
+          <label for="rut" class="form-label">Rut:</label>
+          <input type="text" name="rut" id="rut" class="form-control" required/>
+          <button type="submit" class="btn btn-primary my-3">Cargar datos</button>
+        </form>
+      </section>
+
+      <section id="section-datos-tabla" class="mt-5">
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Nombre</th>
+              <th scope="col">Apellido</th>
+              <th scope="col">rut</th>
+            </tr>
+          </thead>
+          <tbody id="cuerpo-tabla">
+          </tbody>
+        </table>
+      </section>
+    </main>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
     <script src="./assets/js/script.js"></script>
   </body>
 </html>
